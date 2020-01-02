@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	 <link rel="icon" type="image/jpg" href="./img/icon.png" />
+	<meta charset="UTF-8">
+	<title>D.O.A - FORM</title>
+	<link href="./css/main_form.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main2">
+		<ul>
+  	  	    <li><a href="./index.html" style="padding:0;padding-right: 30px;padding-left: 30px;"><img src="./img/logo2.png" height="42" width="42"></a></li>
+		    <li><a href="./index.html">HOME</a></li>
+		    <li><a class="active" href="#news">CADASTRO</a></li>
+		    <li><a href="./about.html">SOBRE</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<h1>Formulário de Cadastro</h1>
+
+		<form action="./php/process.php" method="post">
+		<fieldset>
+			
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" style="width: 20em" value="" />
+				</div>
+				<div class="campo">
+					<label for="snome">Sobrenome</label>
+					<input type="text" id="snome" name="snome" style="width: 20em" value="" />
+				</div>
+			</fieldset>	
+			
+			<div class="campo">
+				<label>Sexo</label>
+				<label class="checkbox">
+					<input type="radio" name="sexo" value="m"> Masculino
+				</label>
+				<label class="checkbox">
+					<input type="radio" name="sexo" value="f"> Feminino
+				</label>
+				<label class="checkbox">
+					<input type="radio" name="sexo" value="n"> Não Informar
+				</label>
+			</div>
+
+			<div class="campo">
+				<label for="email">E-mail</label>
+				<input type="text" id="email" name="email" style="width: 41em" value="" />
+			</div>
+
+			<div class="campo">
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone" name="telefone" style="width: 20em"  value="" />
+			</div>
+			
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for="cidade">Cidade</label>
+					<input type="text" id="cidade" name="cidade" style="width: 20em" value="" />
+				</div>
+				<div class="campo">
+					<label for="estado">Estado</label>
+					<select name="estado" id="estado">
+						<option value="">--</option>
+						<option value="AC">AC</option>
+						<option value="AL">AL</option>
+						<option value="AP">AP</option>
+						<option value="AM">AM</option>
+						<option value="BA">BA</option>
+						<option value="CE">CE</option>
+						<option value="DF">DF</option>
+						<option value="ES">ES</option>
+						<option value="GO">GO</option>
+						<option value="MA">MA</option>
+						<option value="MT">MT</option>
+						<option value="MS">MS</option>
+						<option value="MG">MG</option>
+						<option value="PA">PA</option>
+						<option value="PB">PB</option>
+						<option value="PR">PR</option>
+						<option value="PE">PE</option>
+						<option value="PI">PI</option>
+						<option value="RJ">RJ</option>
+						<option value="RN">RN</option>
+						<option value="RS">RS</option>
+						<option value="RO">RO</option>
+						<option value="RR">RR</option>
+						<option value="SC">SC</option>
+						<option value="SP">SP</option>
+						<option value="SE">SE</option>
+						<option value="TO">TO</option>	
+					</select>
+				</div>
+			</fieldset>
+
+			<div class="campo">
+				<label>Tipo Sanguíneo</label>
+				<select name="lecture">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="AB">AB</option>
+					<option value="O">O</option>
+				</select>
+			</div>
+			
+			<button class="botao submit" type="submit" name="submit">Enviar</button>
+			
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
